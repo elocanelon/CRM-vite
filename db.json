@@ -1,15 +1,6 @@
 {
   "clientes": [
     {
-      "id": 1
-    },
-    {
-      "id": 2
-    },
-    {
-      "id": 3
-    },
-    {
       "id": 4
     },
     {
@@ -19,7 +10,7 @@
       "id": 6
     },
     {
-      "nombre": "comida",
+      "nombre": "Eloy Canelon",
       "empresa": "CanelonInc",
       "email": "eloyecanelonj@gmail.com",
       "telefono": "",

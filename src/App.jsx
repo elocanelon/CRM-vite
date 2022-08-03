@@ -5,6 +5,8 @@ import Inicio from "./pages/inicio"
 import LoginForm from "./pages/LoginForm"
 import NuevoCliente from './pages/nuevoCliente'
 import EditarCliente from "./pages/EditarCliente"
+import VerCliente from "./pages/VerCliente"
+
 
 function App() {
   
@@ -20,6 +22,7 @@ function App() {
           <Route index element={<Inicio />}/>
           <Route path="nuevo" element={<NuevoCliente />} />
           <Route path="editar/:id" element={<EditarCliente />} />
+          <Route path=":id" element={<VerCliente />} />
         </Route>
       </Routes>
     </BrowserRouter>

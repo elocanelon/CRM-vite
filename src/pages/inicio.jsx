@@ -22,6 +22,27 @@ const Inicio = () => {
 
         obtenerClientes()
     }, [])
+
+    const handleEliminar = async id => {
+        const confirmar = confirm("¿Deseas eliminar este cliente?")
+
+        if (confirmar){
+            try {
+                const url = `http://localhost:4000/clientes/${id}`
+                const respuesta = await fetch(url, {
+                    method:"DELETE"
+                })
+
+                await respuesta.json()
+
+                const ArrayClientes = clientes.filter(cliente => cliente.id !== id)
+
+                setClientes(ArrayClientes)
+            } catch (error) {
+                console.log(error)
+            }
+        }
+    }
     
     return (
         <div>
@@ -41,7 +62,8 @@ const Inicio = () => {
                 <tbody>
                     {clientes.map( cliente => (
                         <Cliente key={cliente.id} 
-                                 cliente={cliente} />
+                                 cliente={cliente}
+                                 handleEliminar={handleEliminar} />
                     ))}
                 </tbody>
             </table>
