@@ -1,0 +1,46 @@
+{
+  "clientes": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "nombre": "comida",
+      "empresa": "CanelonInc",
+      "email": "eloyecanelonj@gmail.com",
+      "telefono": "",
+      "notas": "",
+      "id": 7
+    },
+    {
+      "nombre": "Eloy",
+      "empresa": "CASTIL",
+      "email": "eloyecanelonj@gmail.com",
+      "telefono": "123456",
+      "notas": "Nuevo cliente ",
+      "id": 8
+    },
+    {
+      "nombre": "Jack",
+      "empresa": "perros.com",
+      "email": "jack@gmail.com",
+      "telefono": "1324564",
+      "notas": "Es un perro",
+      "id": 9
+    }
+  ]
+}
